@@ -1,16 +1,63 @@
-# React + Vite
+<h1 align="center">💬 Feedback App — Frontend</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p align="center">
+  <strong>React.js + Vite + MUI + Axios</strong><br>
+  User interface for submitting, editing, and viewing feedbacks.
+</p>
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<h2>🚀 About</h2>
+<p>
+This is the <strong>frontend</strong> part of the <em>Feedback App</em> project.  
+Users can submit their feedback, rate, and see all other feedbacks.  
+It connects to the backend API for data persistence.
+</p>
 
-## React Compiler
+<h2>🧩 Tech Stack</h2>
+<ul>
+  <li>⚛️ <strong>React.js</strong> — component-based UI</li>
+  <li>⚡ <strong>Vite</strong> — fast build tool</li>
+  <li>🎨 <strong>MUI (Material-UI)</strong> — prebuilt UI components</li>
+  <li>📡 <strong>Axios</strong> — HTTP client for API requests</li>
+</ul>
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+<h2>💡 Features</h2>
+<ul>
+  <li>Submit new feedbacks with name, message, and rating</li>
+  <li>Edit and update existing feedbacks</li>
+  <li>Delete feedbacks</li>
+  <li>Responsive layout for desktop and mobile</li>
+</ul>
 
-## Expanding the ESLint configuration
+<h2>⚙️ Run Locally</h2>
+<pre><code>cd frontend
+npm install
+npm run dev
+</code></pre>
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+<h2>📦 Build for Production</h2>
+<pre><code>npm run build
+</code></pre>
+
+<h2>🌍 Demo</h2>
+<p>
+Deployed frontend: <a href="https://feedback-website-app.netlify.app/" target="_blank">feedback-website-app.netlify.app</a>
+</p>
+
+<h2>📁 Project Structure</h2>
+<pre><code>frontend/
+ ├─ src/
+ │  ├─ main.jsx
+ │  ├─ App.jsx
+ │  ├─ components/
+ │  │  ├─ FeedbackForm.jsx
+ │  │  ├─ FeedbackItem.jsx
+ │  │  └─ FeedbackList.jsx
+ ├─ index.html
+ ├─ package.json
+ └─ vite.config.js
+</code></pre>
+
+Created by <strong>Yulya Kosheleva</strong>
+</p>
