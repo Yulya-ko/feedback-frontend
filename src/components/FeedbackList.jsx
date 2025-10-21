@@ -14,7 +14,7 @@ const FeedbackList = () => {
     setLoading(true);
     setError(null);
     try {
-      const res = await axios.get("https://feedback-backend-gmve.onrender.com");
+      const res = await axios.get("https://feedback-backend-gmve.onrender.com/api/feedbacks");
       if (Array.isArray(res.data)) {
         setFeedbacks(res.data);
       } else {
@@ -36,7 +36,7 @@ const FeedbackList = () => {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`https://feedback-backend-gmve.onrender.com/${id}`);
+      await axios.delete(`https://feedback-backend-gmve.onrender.com/api/feedbacks/${id}`);
       fetchFeedbacks();
     } catch (err) {
       console.error("Error deleting feedback:", err);

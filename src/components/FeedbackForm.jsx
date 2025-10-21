@@ -15,10 +15,10 @@ const FeedbackForm = ({ fetchFeedbacks, editFeedback, setEditFeedback }) => {
     e.preventDefault();
     try {
       if (editFeedback) {
-        await axios.put(`https://feedback-backend-gmve.onrender.com/${editFeedback._id}`, feedback);
+        await axios.put(`https://feedback-backend-gmve.onrender.com/api/feedbacks/${editFeedback._id}`, feedback);
         setEditFeedback(null);
       } else {
-        await axios.post("https://feedback-backend-gmve.onrender.com", feedback);
+        await axios.post("https://feedback-backend-gmve.onrender.com/api/feedbacks", feedback);
       }
       setFeedback({ name: "", message: "", rating: 1 });
       fetchFeedbacks();
